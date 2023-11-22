@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT NEWS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
+</head>
+
+<body>
+    <nav>
+        <a href="#" class="brand">
+            <span>IT NEWS</span>
+        </a>
+    </nav>
+    <div style="width: 60%; margin: 0 auto; padding-top:80px;">
+        <h2>Adding News</h2>
+
+        <form action="/create" method="post">
+
+            <p><input type="text" placeholder="Headline" name="head_field"></p>
+            <p>
+                <select name="topic_field">
+                    <option value="Shoes">Shoes</option>
+                    <option value="Beauty">Beauty</option>
+                    <option value="Books">Books</option>
+                </select>
+            </p>
+            <textarea name="article_field" cols="30" rows="10"></textarea>
+
+            <button>Add article</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT NEWS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
+</head>
+<body>
+    <nav>
+        <a href="#" class="brand">
+            <span>IT NEWS</span>
+        </a>
+        <div class="menu">
+            <a href="/create">Add article</a>
+            <img src=" <%= writer[0].picture %>">
+            
+          </div>
+    </nav>
+    <div style="width: 80%; margin: 0 auto; padding-top:80px;">
+        <h2><%= writer[0].name %> Articles</h2>
+        
+        <div class="flex two three-600 four-1200">
+            <% news.forEach((article)=>{ %>
+
+                <article class="card" style="margin: 2px;">
+                    <header style="min-height: 120px;">
+                        <%= article.headline %>
+                    </header>
+                    <footer>
+                        <button>delete</button>
+                    </footer>
+                </article>
+
+             <% }); %>
+        </div>
+    </div>
+</body>
+
+</html>
